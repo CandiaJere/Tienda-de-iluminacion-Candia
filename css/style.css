@@ -24,8 +24,8 @@ grid-template-rows: 130px 50px 50px;
 grid-column-start: 1;
 grid-column-end: 3;
 text-decoration: none;
-
 }
+
 
 header nav ul{
 display: flex;
@@ -40,12 +40,22 @@ header nav ul li{
 list-style: none;
 }
 
+
+a{
+text-decoration: none;
+color: blanchedalmond;
+
+}
+
 .encabezado-principal h1{
     text-align: center;
     justify-content: center;
     align-items: center;
     color: aliceblue;
     font-size: 100px;
+    color: #FFFFFF;
+  
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
 
 .encabezado-principal h2{
@@ -56,11 +66,15 @@ list-style: none;
     align-content: center;
     color: rgb(79, 126, 255);
     font-size: 30px;
+    
 }
-a{
-text-decoration: none;
-color: blanchedalmond;
+
+button:hover{
+ transform: translate(5px, 5px);
 }
+
+
+
 
 .encabezado-principal img{
 width: 180px;
@@ -72,9 +86,7 @@ grid-row: 1/2;
 
 @media (max-width: 480px) {
     .header {
-      width: 50%;
-      padding-left: 23px;
-      flex-direction: column;
+      width: auto;
     }
     .cuerpo {
       width: 100%;
@@ -109,7 +121,7 @@ grid-row: 1/2;
 
 
 .seccion{
-    background-color: rgb(79, 126, 255);
+  background-color: rgb(79, 126, 255);
     display: grid;
     grid-template-columns: auto;
 }
@@ -117,13 +129,17 @@ grid-row: 1/2;
 
 .seccion h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 20px;
     background-color: rgb(79, 126, 255);
 }
 
 .seccion img{
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
 }
 .contenedor-tarjeta{
     display: flex;
@@ -141,9 +157,12 @@ grid-row: 1/2;
     border: 2px solid black;
     border-radius: 8px;
     margin: 10px 10px;
-   
-
+   width:300px;
+   box-shadow: 7px 10px 2px 7px rgb(31, 31, 204);
+  
 }
+
+
 .tarjeta p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -161,23 +180,21 @@ grid-row: 1/2;
 
 
 
-
 footer{
     padding-top: 80px;
-    background-color: rgb(0, 119, 255);
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: 
     ".contacto .redes";
+    background-image: linear-gradient(to bottom, rgb(79, 126, 255) , #00ffd5);
+
 }
 footer p{
 
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.contacto{
 
-}
 #redesSociales{
     width: 30px;
     height: 30px;
