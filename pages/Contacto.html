@@ -30,21 +30,27 @@
         </div>
     </header>
     <main>
-        <section>
-            <article>
+        <section class="seccion">
+            <article class="contacto">
                 <h2>Comunicate con nosotros</h2>
                 
                     <form>
                         
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" id="nombre" placeholder="nombre y apellido" required>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Nombre y apellido</span>
+                            <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="tu email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@hotmail.com</span>
+                          </div>
+                          
                         
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="Email@email.com" required>
-                        
-                        
-                        <label for="telefono">Numero de telefono</label>
-                        <input type="tel" id="telefono" placeholder="(codigo de area) numero de telefono" required>
+                          <div class="input-group">
+                            <span class="input-group-text">Escribe tu mensaje</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
                 <div>
                         <label for="pais">Seleccionar localidad</label>
                         <select name="" id="pais">
@@ -53,7 +59,6 @@
                             <option value="">Rio Negro</option>
                         </select>
                         
-                            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
                             <input type="submit" id="mensaje" value="Enviar">
                             <input type="reset" name="" id="mensaje" value="Borrar todo">
                         
