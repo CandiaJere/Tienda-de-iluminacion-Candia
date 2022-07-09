@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,65 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Contactanos - Electro</title>
 </head>
+
 <body>
     <header>
         <div class="encabezado">
             <div class="encabezado-principal">
-                    <a href="./index.html"><img src="../images/electro.png" alt="Electro"></a>
-                    <h1><a href="../index.html">Electro</a></h1>
-                    <h2>Tienda de productos y servicios electricos</h2>
-                    
-                    <div class="encabezado-navegador">
-                        <nav>
-                            <ul>
-                                <li><a href="Domiciliar.html"> Elementos Domiciliares</a></li>
-                                <li><a href="Herramientas.html"> Herramientas</a></li>
-                                <li><a href="Servicios.html"> Servicios</a></li>
-                                <li><a href="Industrial.html"> Industriales</a></li>
-                                <li><a href="Contacto.html"> Contactanos</a></li>
+                <a href="../index.html"><img src="../images/electro.png" alt="Electro"></a>
+                <h1><a href="../index.html">Electro</a></h1>
+                <h2>Tienda de productos y servicios electricos</h2>
+
+                <div class="encabezado-navegador">
+                    <nav>
+                        <ul>
+                            <li><a href="Domiciliar.html"> Elementos Domiciliares</a></li>
+                            <li><a href="Herramientas.html"> Herramientas</a></li>
+                            <li><a href="Servicios.html"> Servicios</a></li>
+                            <li><a href="Industrial.html"> Industriales</a></li>
+                            <li><a href="Contacto.html"> Contactanos</a></li>
                         </ul>
-                    </div>
+                </div>
             </div>
-                </nav>            
+            </nav>
         </div>
     </header>
     <main>
-        <section>
-            <article>
+        <section class="seccion">
+            <article class="contacto">
                 <h2>Comunicate con nosotros</h2>
-                
-                    <form>
-                        
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" id="nombre" placeholder="nombre y apellido" required>
-                        
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="Email@email.com" required>
-                        
-                        
-                        <label for="telefono">Numero de telefono</label>
-                        <input type="tel" id="telefono" placeholder="(codigo de area) numero de telefono" required>
-                <div>
+
+                <form>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Nombre y apellido</span>
+                        <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="tu email" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@hotmail.com</span>
+                    </div>
+
+
+                    <div class="input-group">
+                        <span class="input-group-text">Escribe tu mensaje</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div>
                         <label for="pais">Seleccionar localidad</label>
                         <select name="" id="pais">
                             <option value="">Buenos Aires</option>
                             <option value="">La Pampa</option>
                             <option value="">Rio Negro</option>
                         </select>
-                        
-                            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                            <input type="submit" id="mensaje" value="Enviar">
-                            <input type="reset" name="" id="mensaje" value="Borrar todo">
-                        
-                    </form>
+
+                        <input type="submit" id="mensaje" value="Enviar">
+                        <input type="reset" name="" id="mensaje" value="Borrar todo">
+
+                </form>
                 </div>
             </article>
         </section>
@@ -68,26 +77,27 @@
     <footer>
         <div>
             <p>Contacto</p>
-        
+
             <p> Comunicate con nosotros</p>
-    
-            <p>Teléfono</p> 
+
+            <p>Teléfono</p>
             <p>(298) 432104</p>
-    
+
             <p> Whatsapp</p>
             <p>(298) 12345678</p>
 
             <p>Correo</p>
             <p> ventas1@electro.com</p>
-        </div>                   
-            <div>
-                <p>Redes sociales</p> 
-                <img id="redesSociales" src="../images/facebook.jpg" alt="facebook">
-                <img id="redesSociales" src="../images/ig.png" alt="instagram">
-    
-                <p> Dirección</p>
-                <p> Calle falsa 123 - Springfield</p>
-            </div>        
+        </div>
+        <div>
+            <p>Redes sociales</p>
+            <img id="redesSociales" src="../images/facebook.jpg" alt="facebook">
+            <img id="redesSociales" src="../images/ig.png" alt="instagram">
+
+            <p> Dirección</p>
+            <p> Calle falsa 123 - Springfield</p>
+        </div>
     </footer>
 </body>
+
 </html>
